@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS3实现图片旋转 </title>
+		<style type="text/css">
+			.demo {
+				text-align: center;
+				margin-top: 100px;
+			}
+			
+			@-webkit-keyframes rotation {
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(360deg);
+				}
+			}
+			
+			.an {
+				-webkit-transform: rotate(360deg);
+				/*animation: rotation 20s linear infinite;*/
+				-moz-animation: rotation 20s linear infinite;
+				-webkit-animation: rotation 20s linear infinite;
+				-o-animation: rotation 20s linear infinite;
+			}
+			
+			.img {
+				border-radius: 250px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="demo">
+			<img class="an img" src="img/sun.png" width="500" height="500" />
+		</div>
+	</body>
+
+</html>
